@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Para Yared 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="particles"></canvas>
+
+    <!-- ESCENA 0: Intro -->
+    <section class="scene active" id="scene-0">
+        <div class="scene-inner">
+            <p class="eyebrow">Para alguien muy especial</p>
+            <h1 class="reveal-title">Yared</h1>
+            <p class="sub">Hay algo que llevo tiempo queriendo decirte…</p>
+            <button class="next-btn" data-next="1">Continuar <span class="arrow">→</span></button>
+        </div>
+    </section>
+
+    <!-- ESCENA 1 -->
+    <section class="scene" id="scene-1">
+        <div class="scene-inner">
+            <p class="eyebrow">Lo que siento</p>
+            <h2 class="scene-heading">Siempre que estás cerca…</h2>
+            <p class="scene-body">me siento muy feliz y puedo ser yo mismo.</p>
+            <button class="next-btn" data-next="2">Seguir <span class="arrow">→</span></button>
+        </div>
+    </section>
+
+    <!-- ESCENA 2 -->
+    <section class="scene" id="scene-2">
+        <div class="scene-inner">
+            <p class="eyebrow">La verdad</p>
+            <h2 class="scene-heading">Me haces reír,<br>me entiendes,<br>me haces ser yo.</h2>
+            <p class="scene-body">Y eso, Yared, no es poca cosa.</p>
+            <button class="next-btn" data-next="3">Continuar <span class="arrow">→</span></button>
+        </div>
+    </section>
+
+    <!-- ESCENA 3: La pregunta -->
+    <section class="scene" id="scene-3">
+        <div class="scene-inner final-scene">
+            <div class="candle-row">🕯️ &nbsp; 🕯️</div>
+            <p class="eyebrow">La pregunta</p>
+            <h2 class="big-question">¿Te gustarías<br><em>ser mi novia?</em></h2>
+
+            <div class="buttons-wrap" id="buttonsArea">
+                <button id="yesBtn">¡SÍ! 💕</button>
+                <button id="noBtn">NO</button>
+            </div>
+
+            <p id="responseMessage" class="hidden">¡Me Encantas Hermosa! 🥰❤️</p>
+        </div>
+    </section>
+
+    <!-- Barra de progreso -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
